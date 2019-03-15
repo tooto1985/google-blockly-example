@@ -10,10 +10,6 @@
   <script src="js/blockly_compressed.js"></script>
   <script src="js/blocks_compressed.js"></script>
   <script src="js/javascript_compressed.js"></script>
-  <script src="js/python_compressed.js"></script>
-  <script src="js/php_compressed.js"></script>
-  <script src="js/lua_compressed.js"></script>
-  <script src="js/dart_compressed.js"></script>
   <script src="js/code.js"></script>
 </head>
 <body>
@@ -36,16 +32,7 @@
             <td id="tab_blocks" class="tabon">...</td>
             <td class="tabmin">&nbsp;</td>
             <td id="tab_javascript" class="taboff">JavaScript</td>
-            <td class="tabmin">&nbsp;</td>
-            <td id="tab_python" class="taboff">Python</td>
-            <td class="tabmin">&nbsp;</td>
-            <td id="tab_php" class="taboff">PHP</td>
-            <td class="tabmin">&nbsp;</td>
-            <td id="tab_lua" class="taboff">Lua</td>
-            <td class="tabmin">&nbsp;</td>
-            <td id="tab_dart" class="taboff">Dart</td>
-            <td class="tabmin">&nbsp;</td>
-            <td id="tab_xml" class="taboff">XML</td>
+
             <td class="tabmax">
               <button id="trashButton" class="notext" title="...">
                 <img src='images/1x1.gif' class="trash icon21">
@@ -283,6 +270,13 @@
           </shadow>
         </value>
       </block>
+      <block type="text_console">
+        <value name="TEXT">
+          <shadow type="text">
+            <field name="TEXT">abc</field>
+          </shadow>
+        </value>
+      </block>      
       <block type="text_prompt_ext">
         <value name="TEXT">
           <shadow type="text">

@@ -195,7 +195,7 @@ Code.LANG = Code.getLang();
  * List of tab names.
  * @private
  */
-Code.TABS_ = ['blocks', 'javascript', 'php', 'python', 'dart', 'lua', 'xml'];
+Code.TABS_ = ['blocks', 'javascript'];
 
 Code.selected = 'blocks';
 
@@ -204,28 +204,7 @@ Code.selected = 'blocks';
  * @param {string} clickedName Name of tab clicked.
  */
 Code.tabClick = function(clickedName) {
-  // If the XML tab was open, save and render the content.
-  if (document.getElementById('tab_xml').className == 'tabon') {
-    var xmlTextarea = document.getElementById('content_xml');
-    var xmlText = xmlTextarea.value;
-    var xmlDom = null;
-    try {
-      xmlDom = Blockly.Xml.textToDom(xmlText);
-    } catch (e) {
-      var q =
-          window.confirm(MSG['badXml'].replace('%1', e));
-      if (!q) {
-        // Leave the user on the XML tab.
-        return;
-      }
-    }
-    if (xmlDom) {
-      Code.workspace.clear();
-      Blockly.Xml.domToWorkspace(xmlDom, Code.workspace);
-    }
-  }
-
-  if (document.getElementById('tab_blocks').className == 'tabon') {
+   if (document.getElementById('tab_blocks').className == 'tabon') {
     Code.workspace.setVisible(false);
   }
   // Deselect all tabs and hide all panes.
