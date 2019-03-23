@@ -433,3 +433,12 @@ Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
 Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+
+Blockly.Msg["CATLOGIC"]= "邏輯";
+Blockly.Msg["CATLOOPS"]= "迴圈";
+Blockly.Msg["CATMATH"]="數學式";
+Blockly.Msg["CATTEXT"]= "文字";
+Blockly.Msg["CATLISTS"]= "列表";
+Blockly.Msg["CATCOLOUR"]= "顏色";
+Blockly.Msg["CATVARIABLES"]= "變量";
+Blockly.Msg["CATFUNCTIONS"]= "流程";
